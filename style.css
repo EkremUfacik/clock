@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url("./img/27230.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#screen {
+    color: rgb(212, 212, 212);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-shadow: 4px 4px black;
+
+    font-size: 72px;
+}
+
+#clock {
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#calendar {
+    font-size: 4rem;
+}
+
+#calendar {
+    font-size: 3rem;
+}
+
+#current-day {
+    font-size: 2rem;
+}
+
+.img img {
+    width: 50px;
+    animation: clock 1s ease-in-out infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes clock {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
